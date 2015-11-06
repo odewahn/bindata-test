@@ -5,7 +5,7 @@ Example of how to compile a static website into a go package that can be bundled
 
 Once you `go get elazarl/go-bindata-assetfs`, run `go-bindata-assetfs static/...` to build a package called `bindata_assefs.go`.  This will convert all the files and assets in the `static` directory into a go package and give a nice interface to working with them.  The assets and files are compressed and stored as a data structure in the package.
 
-*For development, use `go-bindata-assetfs -debug static/...` the to serve the files directly, so that you don't have to compile them each time.*
+*For development, use `go-bindata-assetfs -debug static/...` to serve the files directly, so that you don't have to compile them each time.*
 
 Then, you can build or run it and mount the package as a file handler using `net/http`, like this:
 
